@@ -42,7 +42,6 @@
 #include "infSwcServiceOsSwcApplEcuM.hpp"
 
 //TBD: Clean-up
-#include "version.hpp"
 #include "CanManagerX.hpp"
 #include "DemManagerX.hpp"
 #include "EnvManagerX.hpp"
