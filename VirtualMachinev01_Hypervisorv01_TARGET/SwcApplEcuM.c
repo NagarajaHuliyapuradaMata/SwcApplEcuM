@@ -1,7 +1,7 @@
 /******************************************************************************/
 /* File   : SwcApplEcuM.c                                                     */
 /*                                                                            */
-/* Author : Raajnaag HULIYAPURADA MATA                                        */
+/* Author : Nagaraja HULIYAPURADA MATA                                        */
 /*                                                                            */
 /* License / Warranty / Terms and Conditions                                  */
 /*                                                                            */
@@ -13,7 +13,7 @@
 /* certain responsibilities, if you distribute copies of the software, or if  */
 /* you modify it: responsibilities to respect the freedom of others.          */
 /*                                                                            */
-/* All rights reserved. Copyright © 1982 Raajnaag HULIYAPURADA MATA           */
+/* All rights reserved. Copyright © 1982 Nagaraja HULIYAPURADA MATA           */
 /*                                                                            */
 /* Always refer latest software version from:                                 */
 /* https://github.com/RaajnaagHuliyapuradaMata?tab=repositories               */
@@ -35,7 +35,7 @@
 #include "infSwcServiceDcmSwcApplEcuM.hpp"
 #include "infSwcServiceDetSwcApplEcuM.hpp"
 
-#ifdef BUILD_RIVIAN
+#ifdef BUILD_RAJA
 #include "infSwcServiceFiMSwcApplEcuM.hpp"
 #endif
 
@@ -178,7 +178,7 @@ FUNC(void, SWCAPPLECUM_CODE) infSwcApplEcuMSwcServiceEcuM_vInitDriverOne(
    (void)infSwcServiceDcmSwcApplEcuM_vInitFunction(0);
    (void)CanTp_Init(ConfigPtr->stRefCfgModules.pcstCfgSwcServiceCanTp);
    (void)Dem_Init();
-#ifdef BUILD_RIVIAN
+#ifdef BUILD_RAJA
    (void)infSwcServiceFiMSwcApplEcuM_vInitFunction(ConfigPtr->stRefCfgModules.pcstCfgSwcServiceFiM);
 #endif
 }

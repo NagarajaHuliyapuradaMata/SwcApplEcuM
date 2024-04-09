@@ -1,8 +1,8 @@
 #pragma once
 /******************************************************************************/
-/* File   : infSwcApplEcuMSwcServiceEcuM.h                                    */
+/* File   : infSwcApplEcuMMcalMcu.hpp                                         */
 /*                                                                            */
-/* Author : Raajnaag HULIYAPURADA MATA                                        */
+/* Author : Nagaraja HULIYAPURADA MATA                                        */
 /*                                                                            */
 /* License / Warranty / Terms and Conditions                                  */
 /*                                                                            */
@@ -14,7 +14,7 @@
 /* certain responsibilities, if you distribute copies of the software, or if  */
 /* you modify it: responsibilities to respect the freedom of others.          */
 /*                                                                            */
-/* All rights reserved. Copyright © 1982 Raajnaag HULIYAPURADA MATA           */
+/* All rights reserved. Copyright © 1982 Nagaraja HULIYAPURADA MATA           */
 /*                                                                            */
 /* Always refer latest software version from:                                 */
 /* https://github.com/RaajnaagHuliyapuradaMata?tab=repositories               */
@@ -24,7 +24,9 @@
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
-#include "MemMap_SwcServiceEcuM.hpp"
+#include "CompilerCfg_SwcServiceEcuM.hpp"
+
+#include "Types_SwcServiceEcuM.hpp"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
@@ -53,17 +55,7 @@
 /******************************************************************************/
 /* FUNCTIONS                                                                  */
 /******************************************************************************/
-extern FUNC(const Type_CfgSwcServiceEcuM_st*, SWCAPPLECUM_CODE) infSwcApplEcuMSwcServiceEcuM_stDetermineConfigurationPb (void);
-extern FUNC(void,                             SWCAPPLECUM_CODE) infSwcApplEcuMSwcServiceEcuM_vSetInterruptsProgrammable (void);
-extern FUNC(void,                             SWCAPPLECUM_CODE) infSwcApplEcuMSwcServiceEcuM_vInitDriverZero            (void);
-extern FUNC(void,                             SWCAPPLECUM_CODE) infSwcApplEcuMSwcServiceEcuM_vCheckConsistency          (void);
-extern FUNC(void,                             SWCAPPLECUM_CODE) infSwcApplEcuMSwcServiceEcuM_vSetSourceWakeup           (void);
-extern FUNC(void,                             SWCAPPLECUM_CODE) infSwcApplEcuMSwcServiceEcuM_vSwitchOsModeApp           (void);
-extern FUNC(void,                             SWCAPPLECUM_CODE) infSwcApplEcuMSwcServiceEcuM_vStartOS                   (void);
-
-extern FUNC(void, SWCAPPLECUM_CODE) infSwcApplEcuMSwcServiceEcuM_vInitDriverOne(
-   P2CONST(Type_CfgSwcServiceEcuM_st, AUTOMATIC, ECUM_APPL_CONST) ConfigPtr
-);
+extern void infSwcApplEcuMMcalMcu_vSetModeEcu(Type_SwcServiceEcuM_eModesEcu leModeEcu);
 
 /******************************************************************************/
 /* EOF                                                                        */
