@@ -1,23 +1,7 @@
 /******************************************************************************/
 /* File   : SwcApplEcuM.c                                                     */
-/*                                                                            */
-/* Author : Nagaraja HULIYAPURADA MATA                                        */
-/*                                                                            */
-/* License / Warranty / Terms and Conditions                                  */
-/*                                                                            */
-/* Everyone is permitted to copy and distribute verbatim copies of this lice- */
-/* nse document, but changing it is not allowed. This is a free, copyright l- */
-/* icense for software and other kinds of works. By contrast, this license is */
-/* intended to guarantee your freedom to share and change all versions of a   */
-/* program, to make sure it remains free software for all its users. You have */
-/* certain responsibilities, if you distribute copies of the software, or if  */
-/* you modify it: responsibilities to respect the freedom of others.          */
-/*                                                                            */
-/* All rights reserved. Copyright © 1982 Nagaraja HULIYAPURADA MATA           */
-/*                                                                            */
-/* Always refer latest software version from:                                 */
-/* https://github.com/RaajnaagHuliyapuradaMata?tab=repositories               */
-/*                                                                            */
+/* Author : Nagaraja HULIYAPURADA-MATA                                        */
+/* Date   : 01.02.1982                                                        */
 /******************************************************************************/
 
 /******************************************************************************/
@@ -218,7 +202,6 @@ FUNC(void, SWCAPPLECUM_CODE) infSwcApplEcuMSwcServiceEcuM_vStartOS(void){
 void                                infSwcApplEcuMMcalMcu_vSetModeEcu (Type_SwcServiceEcuM_eModesEcu leModeEcu){       eModeEcu = leModeEcu;}
 Type_SwcServiceEcuM_eModesEcu       infSwcApplEcuM_eGetModeEcu        (void)                                   {return eModeEcu;}
 Type_SwcServiceEcuM_eTargetShutdown infSwcApplEcuM_eGetShutdownTarget (void)                                   {return eTargetShutdown;}
-
 
 static void HandleTimerStart_vCoastMode    (void){u32TimerCoastMode = CfgSwcServiceEcuM_dTimeCoastMode10ms;}
 static void HandleTimerStop_vCoastMode     (void){u32TimerCoastMode = 0;}
